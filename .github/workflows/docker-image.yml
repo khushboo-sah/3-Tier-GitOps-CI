@@ -200,5 +200,5 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "bump images to ${IMAGE_TAG}"
-            git push
+            git push https://x-access-token:${{ secrets.CD_REPO_TOKEN }}@github.com/khushboo-sah/3-Tier-GitOps-CD.git main
           fi
