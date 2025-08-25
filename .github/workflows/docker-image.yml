@@ -201,4 +201,4 @@ jobs:
             git add -A
             git commit -m "bump images to ${IMAGE_TAG}"
             git push origin main
-
+          fi
